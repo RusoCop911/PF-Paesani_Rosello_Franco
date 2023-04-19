@@ -1,0 +1,242 @@
+* { margin: 0; padding: 0; }
+@font-face {
+    font-family: 'good_times';
+    src: url(../fonts/good_times/good\ times\ rg.otf);
+}
+
+/* BODY */
+header {
+    font-family: 'good_times';
+}
+body {
+    background-image: linear-gradient(to bottom, #FFBABA 0%, #ffffff 100%);
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-family: 'good_times';
+    text-align: center;
+    color: #8f6710;
+}
+h2 {
+    font-family: 'good_times';
+    text-align: center;
+    color: #8f6710;
+}
+h5 {
+    font-family: 'good_times';
+    font-size: medium;
+    color: #8f6710;
+}
+p {
+    font-family: 'Mukta', sans-serif;
+    font-size: medium;
+}
+a {
+    color: #8f6710;
+}
+
+/* INDEX */
+
+/* HEADER */
+.navbar-web {
+    display: none;
+}
+.logo-nav-idex {
+    width: 50%;
+}
+
+/* MAIN */
+.logo {
+    display: none;
+}
+.texto-presentacion {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.texto-presentacion p {
+    margin: 0;
+}
+.section-img {
+    text-align: center;
+}
+.section-img img {
+    border-radius: 10px;
+}
+.hr {
+    margin: 30px;
+}
+.testimonios h2 {
+    margin: 0;
+    color: #8f6710;
+    text-decoration: underline;
+}
+.cards {
+    padding: 30px;
+}
+.card {
+    margin: 10px;
+}
+.card-body {
+    text-align: center;
+}
+
+/* FOOTER */
+.nav-footer {
+    display: none;
+}
+.texto-footer {
+    text-align: center;
+    padding: 10px;
+}
+.texto-footer p {
+    margin: 0;
+    font-size: small;
+}
+.texto-footer a {
+    color: #8f6710;
+    font-size: small;
+}
+
+/* SERVICIOS */
+
+/* HEADER */
+.navbar-web-2 {
+    display: none;
+}
+
+/* MAIN */
+.section-servicio-integral {
+    text-align: center;
+    padding: 30px 10px;
+}
+.section-servicio-integral p {
+    margin: 0;
+}
+.section-iconos {
+    padding: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --bs-body-bg: none;
+    border: none;
+}
+.card img {
+    width: 30%;
+    padding-top: 16px;
+}
+.card p {
+    margin: 0;
+}
+.section-img {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* MEDIAS */
+
+/* INDEX MEDIA*/
+@media screen and (min-width: 480px) {
+    .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 950px) {
+    /* HEADER */
+    .navbar-mobile {
+        display: none;
+    }
+    .navbar-web {
+        display: flex;
+        background-color: #d1b270;
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-list li {
+        padding: 10px;
+    }
+    .nav-link {
+        color: #8f6710;
+        transition: .8s;
+    }
+    .nav-link:hover {
+        color: black;
+    }
+    /* MAIN */
+    .logo {
+        display: block;
+    }
+    .presentacion {
+        text-align: center;
+        padding: 20px;
+    }
+    .section-img {
+        padding: 0;
+    }
+    /* FOOTER */
+    .nav-footer {
+        display: block;
+    }
+    .nav-link-footer {
+        color: #8f6710;
+        font-family: 'good_times';
+        font-size:x-small
+    }
+}
+
+/* SERVICIOS MEDIA */
+@media screen and (min-width: 950px) {
+    /* HEADER */
+    .navbar-mobile2 {
+        display: none;
+    }
+    .navbar-web-2 {
+        display: block;
+    }
+    .nav2 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .nav2 img {
+        width: 50%;
+        padding-top: 20px;
+    }
+    .nav-list2 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .nav-list2 li {
+        padding: 0 10px;
+    }
+
+    /* MAIN */
+    .section-iconos {
+        display: flex;
+    }
+    .section-img {
+        padding: 30px;
+    }
+}
