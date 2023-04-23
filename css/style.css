@@ -136,8 +136,26 @@ a {
     padding: 10px;
 }
 
+/* EVENTOS */
 
-
+/* MAIN */
+.section-video-eventos {
+    display: flex;
+    padding: 10px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ic {
+    text-align: center;
+}
+.ic img {
+    width: 50%;
+}
+.ic p {
+    margin: 0;
+}
 
 
 
