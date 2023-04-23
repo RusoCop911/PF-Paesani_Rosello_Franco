@@ -143,11 +143,14 @@ a {
     display: flex;
     padding: 10px;
 }
-.grid-layout {
+.grid-layaout {
     display: grid;
+    justify-content: space-evenly;
     grid-template-columns: auto auto;
+    padding: 20px;
 }
 .ic {
+    width: 150px;
     text-align: center;
 }
 .ic img {
@@ -156,7 +159,10 @@ a {
 .ic p {
     margin: 0;
 }
-
+.section-img-eventos {
+    text-align: center;
+    margin: 30px 0;
+}
 
 
 
