@@ -143,6 +143,9 @@ a {
     display: flex;
     padding: 10px;
 }
+.video {
+    display: contents;
+}
 .grid-layaout {
     display: grid;
     justify-content: space-evenly;
@@ -176,8 +179,31 @@ a {
     padding: 10px;
 }
 .section-carousel-multimedia {
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
+
+/* CONTACTO */
+
+/* MAIN */
+.contacto-main {
+    display: flex;
+    flex-direction: column;
+}
+.mapa {
+    padding: 10px;
+}
+.pie-mapa {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.pie-mapa p {
+    margin: 0;
+}
+
+
+
+
 
 /* MEDIAS */
 
@@ -275,5 +301,54 @@ a {
     }
     .section-img {
         padding: 30px;
+    }
+}
+
+/* EVENTOS MEDIA */
+@media screen and (min-width: 950px) {
+    /* MAIN */
+    .section-video-eventos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .section-iconos-eventos {
+        display: flex;
+    } */
+    .grid-layaout {
+        display: flex;
+    }
+}
+
+/* MULTIMEDIA MEDIA */
+@media screen and (min-width: 950px) {
+    /* MAIN */
+    .section-video-multimedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-carousel-multimedia {
+        width: 50%;
+        display: flex;
+        justify-content: center
+    }
+}
+
+/* CONTACTO MEDIA */
+@media screen and (min-width: 950px) {
+    .mapa {
+        width: 50%;
+    }
+    .section-mapa , .pie-mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .contacto-main {
+        padding: 50px;
+        display: grid;
+        grid-template-areas: 'section-mapa section-form';
     }
 }

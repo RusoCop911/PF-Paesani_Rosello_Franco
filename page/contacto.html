@@ -75,52 +75,58 @@
     <!-- MAIN -->
     <main>
 
-        <section class="section-servicio-integral">
-            <h1>SERVICIO INTEGRAL</h1>
-            <p>Nos encargamos de todo, para que tu noche sea inigualable y lo unico que tengas que hacer, sea disfrutar. </p>
-        </section>
+        <h1 class="h1-contacto">CONTACTO</h1>
 
-        <section class="section-iconos">
-            <div class="card">
-                <img src="../multimedia/img/catering.png" alt="icono de catering">
-                <div class="card-body">
-                    <h2>CATERING</h2>
-                    <p>Desde la entrada, pasando por el plato principal y finalizando con el postre, todo es producción propia. <br> Contamos con el mejor Chef de la zona y una cocina industrial, capaz de producir platos de la más alta calidad.</p>
+        <div class="contacto-main">
+            <section class="section-mapa">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12968.949960312006!2d-63.7843241!3d-35.64652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c49d4434ca17cf%3A0xebb3e1109aa374aa!2sEl%20Palmar%20Eventos!5e0!3m2!1ses-419!2sar!4v1678482864064!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../multimedia/img/decoracion.png" alt="icono de decoracion">
-                <div class="card-body">
-                    <h2>DECORACION</h2>
-                    <p>Simplemente decinos tu idea, tu sueño, tu referencia y nosotros hacemos el resto. Siempre respetando la desición final del cliente.</p>
+                <div class="pie-mapa">
+                    <p>Dirección: Isidoro Brunengo y rotonda Norte, Av. Circunvalación, Gral. Pico, La Pampa</p>
+                    <p>Teléfono: xxxx - xxxxxx</p>   
+                </div>                        
+            </section>
+  
+            <section class="section-form">
+                <div class="container">
+                    <form class="row">
+
+                        <div class="col-12">
+                            <label for="nombre" class="nombre"></label>
+                            <input type="text" name="nombre" placeholder="Nombre">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="apellido" class="apellido"></label>
+                            <input type="text" name="apellido" placeholder="Apellido">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="email"></label>
+                            <input type="email" name="email" placeholder="Ingrese su email">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="telefono" class="telefono"></label>
+                            <input type="number" name="telefono" placeholder="Ingrese su teléfono">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="mensaje"></label>
+                            <textarea name="textarea" id="textarea" placeholder="Deje su mensaje"></textarea>
+                        </div>
+
+                        <div class="col-3">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../multimedia/img/dj.png" alt="Icono de dj">
-                <div class="card-body">
-                    <h2>SONIDO e ILUMINACION</h2>
-                    <p>A la hora de bailar somos especialistas. Contamos con los últimos equipos de sonido e iluminación.</p>
-                </div>
-            </div>
-        </section>
-       
-        <section class="section-img">    
-            <div id="carousel-index" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../multimedia/img/catering mesa.jpg" class="w-50" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../multimedia/img/decoracion img.jpg" class="w-50" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../multimedia/img/dj luces.jpg" class="w-50" alt="...">
-                  </div>
-                </div>
-              </div>
-        </section>
+            </section>
+        </div>
 
         <hr class="hr">
+
     </main>
 
     <!-- FOOTER -->
