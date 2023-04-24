@@ -8,12 +8,12 @@
   src: url(../fonts/good_times/good\ times\ rg.otf);
 }
 /* BODY */
-header {
-  font-family: "good_times";
-}
-
 body {
   background-image: linear-gradient(to bottom, #FFBABA 0%, #ffffff 100%);
+}
+
+header {
+  font-family: "good_times";
 }
 
 ul {
@@ -47,8 +47,6 @@ a {
   color: #8f6710;
 }
 
-/* INDEX */
-/* HEADER */
 .navbar-web {
   display: none;
 }
@@ -57,7 +55,29 @@ a {
   width: 50%;
 }
 
-/* MAIN */
+.navbar-web-2 {
+  display: none;
+}
+
+.nav-footer {
+  display: none;
+}
+
+.texto-footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.texto-footer p {
+  margin: 0;
+  font-size: small;
+}
+
+.texto-footer a {
+  color: #8f6710;
+  font-size: small;
+}
+
 .logo {
   display: none;
 }
@@ -102,33 +122,6 @@ a {
   text-align: center;
 }
 
-/* FOOTER */
-.nav-footer {
-  display: none;
-}
-
-.texto-footer {
-  text-align: center;
-  padding: 10px;
-}
-
-.texto-footer p {
-  margin: 0;
-  font-size: small;
-}
-
-.texto-footer a {
-  color: #8f6710;
-  font-size: small;
-}
-
-/* SERVICIOS */
-/* HEADER */
-.navbar-web-2 {
-  display: none;
-}
-
-/* MAIN */
 .section-servicio-integral {
   text-align: center;
   padding: 30px 10px;
@@ -163,8 +156,6 @@ a {
   padding: 10px;
 }
 
-/* EVENTOS */
-/* MAIN */
 .section-video-eventos {
   display: flex;
   justify-content: center;
@@ -202,8 +193,6 @@ a {
   margin: 30px 0;
 }
 
-/* MULTIMEDIA */
-/* MAIN */
 .section-video-multimedia {
   display: flex;
   justify-content: center;
@@ -224,8 +213,6 @@ a {
   display: none;
 }
 
-/* CONTACTO */
-/* MAIN */
 .contacto-main {
   display: flex;
   flex-direction: column;
@@ -270,7 +257,6 @@ a {
   background-color: #d1b270;
 }
 
-/* MEDIAS */
 /* INDEX MEDIA*/
 @media screen and (min-width: 780px) {
   .cards {

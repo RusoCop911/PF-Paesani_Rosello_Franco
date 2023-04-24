@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; }
+
+@font-face {
+    font-family: 'good_times';
+    src: url(../fonts/good_times/good\ times\ rg.otf);
+}
+
+/* BODY */
+body {
+    background-image: linear-gradient(to bottom, #FFBABA 0%, #ffffff 100%);
+}
+header {
+    font-family: 'good_times';
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-family: 'good_times';
+    text-align: center;
+    color: #8f6710;
+}
+h2 {
+    font-family: 'good_times';
+    text-align: center;
+    color: #8f6710;
+}
+h5 {
+    font-family: 'good_times';
+    font-size: medium;
+    color: #8f6710;
+}
+p {
+    font-family: 'Mukta', sans-serif;
+    font-size: medium;
+}
+a {
+    color: #8f6710;
+}
