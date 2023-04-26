@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.video-multimedia1 , .video-multimedia2 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    .video-multimedia1 , .video-multimedia2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
 }
 .section-carousel-multimedia {
     padding: 20px 10px;

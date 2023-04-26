@@ -1,26 +1,28 @@
 .section-servicio-integral {
     text-align: center;
     padding: 30px 10px;
+    p {
+        margin: 0;
+    }
 }
-.section-servicio-integral p {
-    margin: 0;
-}
+
 .section-iconos {
     padding: 10px;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    --bs-body-bg: none;
-    border: none;
-}
-.card img {
-    width: 30%;
-    padding-top: 16px;
-}
-.card p {
-    margin: 0;
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        --bs-body-bg: none;
+        border: none;
+        img {
+            width: 30%;
+            padding-top: 16px;
+        }
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
 }
 .section-img {
     padding: 10px;

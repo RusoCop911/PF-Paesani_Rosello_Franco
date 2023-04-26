@@ -2,27 +2,28 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    .video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
-.video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
 .grid-layaout {
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: auto auto;
     padding: 20px;
-}
-.ic {
-    width: 150px;
-    text-align: center;
-}
-.ic img {
-    width: 50%;
-}
-.ic p {
-    margin: 0;
+    .ic {
+        width: 150px;
+        text-align: center;
+        img {
+            width: 50%;
+        }
+        p {
+            margin: 0;
+        }
+    } 
 }
 .section-img-eventos {
     text-align: center;

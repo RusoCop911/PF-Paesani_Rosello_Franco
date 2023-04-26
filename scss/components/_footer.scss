@@ -4,12 +4,13 @@
 .texto-footer {
     text-align: center;
     padding: 10px;
+    p {
+        margin: 0;
+        font-size: small;
+    }
+    a {
+        color: $main-color;
+        font-size: small;
+    }
 }
-.texto-footer p {
-    margin: 0;
-    font-size: small;
-}
-.texto-footer a {
-    color: #8f6710;
-    font-size: small;
-}
+    

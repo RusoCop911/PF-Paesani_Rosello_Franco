@@ -1,36 +1,36 @@
 .contacto-main {
     display: flex;
     flex-direction: column;
-}
-.mapa {
-    padding: 10px;
-}
-.pie-mapa {
-    padding: 0 10px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.pie-mapa p {
-    margin: 0;
+    .mapa {
+        padding: 10px;
+    }
+    .pie-mapa {
+        padding: 0 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        p {
+            margin: 0;
+        }
+    }
 }
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-.form label , .form input , .form textarea {
-    display: block;
-    width: 100%;
-}
-.btn {
-    background-color: #8f6710;
-    padding: 5px 20px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    transition: .3s;
-}
-.btn:hover {
-    background-color: #d1b270;
+    .form label , .form input , .form textarea {
+        display: block;
+        width: 100%;
+    }
+    .btn {
+        background-color: $main-color;
+        padding: 5px 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 18px;
+        transition: .3s;
+        &:hover {
+            background-color: $second-color;
+        }
+    }   
 }

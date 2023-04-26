@@ -5,30 +5,32 @@
     text-align: center;
     margin: 0;
     padding: 20px;
-}
-.texto-presentacion p {
-    margin: 0;
+    p {
+        margin: 0;
+    }
 }
 .section-img {
     text-align: center;
-}
-.section-img img {
+    img {
     border-radius: 10px;
+    }
 }
+
 .hr {
     margin: 30px;
 }
 .testimonios h2 {
     margin: 0;
-    color: #8f6710;
+    color: $main-color;
     text-decoration: underline;
 }
 .cards {
     padding: 30px;
+    .card {
+        margin: 10px;
+        .card-body {
+            text-align: center;
+        }
+    }
 }
-.card {
-    margin: 10px;
-}
-.card-body {
-    text-align: center;
-}
+
