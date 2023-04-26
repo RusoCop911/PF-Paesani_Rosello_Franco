@@ -7,6 +7,9 @@
     padding: 20px;
     p {
         margin: 0;
+        color: $second-color;
+        font-size: large;
+        font-weight: bolder;
     }
 }
 .section-img {
@@ -21,7 +24,7 @@
 }
 .testimonios h2 {
     margin: 0;
-    color: $main-color;
+    color: $second-color;
     text-decoration: underline;
 }
 .cards {

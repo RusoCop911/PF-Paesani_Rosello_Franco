@@ -1,12 +1,7 @@
 /* INDEX MEDIA*/
 @media screen and (min-width: 780px) {
     .cards {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .hr3 {
-        display: none;
+        @include flex (row, center, center);
     }
 }
 @media screen and (min-width: 950px) {
@@ -18,25 +13,19 @@
         display: none;
     }
     .navbar-web {
-        display: flex;
-        background-color: $second-color;
-        justify-content: center;
+        @include flex (row, center, center);
         .nav-list {
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flex (row, center, center);
             li {
                 padding: 10px;
             }
             .nav-link {
-                color: $main-color;
+                color: $second-color;
                 transition: .8s;
                 &:hover {
-                    color: $third-color;
+                    color: $main-color;
                 }
             }  
         }     
@@ -59,9 +48,7 @@
         display: block;
         .nav-list {
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (row, center, center);
             gap: 20px;
             .nav-link-footer {
                 color: $main-color;
@@ -69,7 +56,7 @@
                 font-size:x-small;
                 transition: .8s;
                 &:hover {
-                    color: $third-color;
+                    color: $four-color;
                 }
             }   
         }  
@@ -85,11 +72,8 @@
     .navbar-web-2 {
         display: block;
         .nav2 {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            flex-wrap: nowrap;
-            justify-content: center;
+            @include flex (row, center, flex-end);
+            padding: 0 20px;
             img {
                 width: 50%;
                 padding-top: 20px;
@@ -104,7 +88,7 @@
                 .nav-link2 {
                     transition: .8s;
                     &:hover {
-                        color: $third-color;
+                        color: $second-color;
                     }
                 } 
             }   
@@ -114,7 +98,7 @@
 
     /* MAIN */
     .section-iconos {
-        display: flex;
+        display: flex;    
     }
     .section-img {
         padding: 30px;
@@ -125,13 +109,10 @@
 @media screen and (min-width: 950px) {
     /* MAIN */
     .section-video-eventos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .video {
-        display: flex;
-        justify-content: center;
+        @include flex (column, center, center);
+        .video {
+            @include flex (column, center, center);
+        }
     }
     .grid-layaout {
         display: flex;
@@ -142,52 +123,46 @@
 @media screen and (min-width: 950px) {
     /* MAIN */
     .section-video-multimedia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex (row, center, center);
     }
     .section-carousel-multimedia {
         display: none;
     }
     .galeria {
-        display: flex;
-        justify-content: center;
+        @include flex (column, center, center);
         margin-top: 30px;
-    }
-    .galeria2 {
-        display: flex;
-        width: 1000px;
-        height: 430px;
-    }
-    .galeria2 img {
-        width: 0! important;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .galeria2 img:hover {
-        width: 80%! important;
-        opacity: 1;
-        filter: contrast(120%);
-    }
+        .galeria2 {
+            display: flex;
+            width: 1000px;
+            height: 430px;
+            img {
+                width: 0! important;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .8;
+                transition: .8s ease;
+                &:hover {
+                    width: 80%! important;
+                    opacity: 1;
+                    filter: contrast(120%);
+                }
+            }
+        }
+    }   
 }
 
 /* CONTACTO MEDIA */
 @media screen and (min-width: 950px) {
-    .section-mapa , .pie-mapa {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-area: left;
-    }
     .contacto-main {
         padding: 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 'left left right right';
-    }
+        .section-mapa , .pie-mapa {
+            @include flex (column, center, center);
+            grid-area: left;
+        }
+    } 
     .section-form {
         grid-area: right;
     }

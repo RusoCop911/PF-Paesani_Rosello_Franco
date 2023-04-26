@@ -7,7 +7,7 @@
 
 /* BODY */
 body {
-    background-image: linear-gradient(to bottom, #FFBABA 0%, #ffffff 100%);
+    background-image: $bg-color-secondary
 }
 header {
     font-family: 'good_times';
@@ -18,22 +18,22 @@ ul {
 h1 {
     font-family: 'good_times';
     text-align: center;
-    color: #8f6710;
+    color: $main-color;
 }
 h2 {
     font-family: 'good_times';
     text-align: center;
-    color: #8f6710;
+    color: $main-color;
 }
 h5 {
     font-family: 'good_times';
     font-size: medium;
-    color: #8f6710;
+    color: $main-color;
 }
 p {
     font-family: 'Mukta', sans-serif;
     font-size: medium;
 }
 a {
-    color: #8f6710;
+    color: $main-color;
 }
