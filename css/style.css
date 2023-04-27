@@ -311,6 +311,41 @@ a {
   .section-img {
     padding: 0;
   }
+  .testimonios .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .testimonios .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.534);
+  }
+  .testimonios .cards .card img {
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 25px;
+    padding-top: 20px;
+  }
+  .testimonios .cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .testimonios .cards .card .card-body p {
+    color: #d1b270;
+    font-weight: bolder;
+  }
+  .testimonios .cards .card .card-body h5 {
+    color: #d1b270;
+  }
   /* FOOTER */
   .nav-footer {
     display: block;

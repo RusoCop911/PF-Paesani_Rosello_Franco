@@ -42,6 +42,34 @@
     .section-img {
         padding: 0;
     }
+    .testimonios {
+        .cards {
+            @include flex (row, center, flex-start);
+            .card {
+                @include flex (column, center, center);
+                width: 400px;
+                height: 450px;
+                background-color: rgba(0, 0, 0, 0.534);
+                img {
+                    align-items: center;
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 25px;
+                    padding-top: 20px;
+                }
+                .card-body {
+                    @include flex (column, space-around, center);
+                    p {
+                        color: $second-color;
+                        font-weight: bolder;
+                    }
+                    h5 {
+                        color: $second-color
+                    }
+                }    
+            }
+        }
+    }
 
     /* FOOTER */
     .nav-footer {
