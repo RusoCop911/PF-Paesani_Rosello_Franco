@@ -36,7 +36,11 @@
         text-align: center;
         padding: 20px;
         .logo {
-            display: block;
+            @include flex (column, center, center);
+            img {
+                width: 40%;
+                padding-bottom: 20px;
+            }
         }
     }
     .section-img {
@@ -60,11 +64,13 @@
                 .card-body {
                     @include flex (column, space-around, center);
                     p {
+                        margin: 0;
                         color: $second-color;
                         font-weight: bolder;
                     }
-                    h5 {
-                        color: $second-color
+                    h3{
+                        margin: 0;
+                        color: $second-color;
                     }
                 }    
             }

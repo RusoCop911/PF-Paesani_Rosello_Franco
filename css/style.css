@@ -32,7 +32,7 @@ h2 {
   color: #8f6710;
 }
 
-h5 {
+h3 {
   font-family: "good_times";
   font-size: medium;
   color: #8f6710;
@@ -306,7 +306,14 @@ a {
     padding: 20px;
   }
   .presentacion .logo {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentacion .logo img {
+    width: 40%;
+    padding-bottom: 20px;
   }
   .section-img {
     padding: 0;
@@ -340,10 +347,12 @@ a {
     align-items: center;
   }
   .testimonios .cards .card .card-body p {
+    margin: 0;
     color: #d1b270;
     font-weight: bolder;
   }
-  .testimonios .cards .card .card-body h5 {
+  .testimonios .cards .card .card-body h3 {
+    margin: 0;
     color: #d1b270;
   }
   /* FOOTER */
