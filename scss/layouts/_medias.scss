@@ -22,10 +22,10 @@
                 padding: 10px;
             }
             .nav-link {
-                color: $second-color;
+                color: $main-color;
                 transition: .8s;
                 &:hover {
-                    color: $main-color;
+                    color: $second-color;
                 }
             }  
         }     

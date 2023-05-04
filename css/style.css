@@ -299,11 +299,11 @@ a {
     padding: 10px;
   }
   .navbar-web .nav-list .nav-link {
-    color: #d1b270;
+    color: #8f6710;
     transition: 0.8s;
   }
   .navbar-web .nav-list .nav-link:hover {
-    color: #8f6710;
+    color: #d1b270;
   }
   /* MAIN */
   .presentacion {
