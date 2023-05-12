@@ -13,7 +13,7 @@
     padding: 10px;
     .card {
         @include flex (column, center, center);
-        --bs-body-bg: none;
+        --bs-body-bg: #0000007d;
         border: none;
         img {
             width: 30%;
@@ -29,4 +29,5 @@
 }
 .section-img {
     padding: 10px;
+    width: 100%;
 }

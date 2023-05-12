@@ -45,6 +45,9 @@
     }
     .section-img {
         padding: 0;
+        img {
+            width: 50%;
+        }
     }
     .testimonios {
         .cards {
@@ -105,6 +108,7 @@
     }
     .navbar-web-2 {
         display: block;
+        padding: 10px 0px;
         .nav2 {
             @include flex (row, center, flex-end);
             padding: 0 20px;
@@ -131,40 +135,72 @@
     
 
     /* MAIN */
+    .section-servicio-integral {
+        padding: 50px 10px;
+    }
     .section-iconos {
-        display: flex;    
+        display: flex;
+        padding: 50px 10px;
+        .card {
+            --bs-body-bg: none;
+        }    
     }
     .section-img {
         padding: 30px;
+        img {
+            width: 50%;
+        }
     }
 }
 
 /* EVENTOS MEDIA */
 @media screen and (min-width: 950px) {
     /* MAIN */
+    .h1-eventos {
+        margin: 0;
+        padding: 50px 10px 20px 10px
+    }
     .section-video-eventos {
         @include flex (column, center, center);
         .video {
+            width: 50%;
             @include flex (column, center, center);
+            iframe {
+                width: 70%;
+            }
         }
     }
     .grid-layaout {
         display: flex;
+    }
+    .section-img-eventos {
+        img {
+            width: 50%;
+            border-radius: 20px;
+        }
     }
 }
 
 /* MULTIMEDIA MEDIA */
 @media screen and (min-width: 950px) {
     /* MAIN */
+    .h1-multimedia {
+        margin: 0;
+        padding: 50px 10px 20px 10px
+    }
     .section-video-multimedia {
         @include flex (row, center, center);
+        padding: 20px;
+        iframe {
+            width: 515px;
+        }
     }
     .section-carousel-multimedia {
         display: none;
     }
     .galeria {
         @include flex (column, center, center);
-        margin-top: 30px;
+        margin: 30px;
         .galeria2 {
             display: flex;
             width: 1000px;
@@ -187,11 +223,16 @@
 
 /* CONTACTO MEDIA */
 @media screen and (min-width: 950px) {
+    .h1-contacto {
+        margin: 0;
+        padding: 50px 10px 20px 10px
+    }
     .contacto-main {
         padding: 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 'left left right right';
+        background-color: rgba(0, 0, 0, 0.219);
         .section-mapa , .pie-mapa {
             @include flex (column, center, center);
             grid-area: left;

@@ -4,6 +4,9 @@
     .video {
         width: 100%;
         @include flex (column, center, center);
+        iframe {
+            width: 100%;
+        }
     }
 }
 
@@ -29,4 +32,8 @@
 .section-img-eventos {
     text-align: center;
     margin: 30px 0;
+    img {
+        width: 100%;
+        padding: 10px;
+    }
 }
