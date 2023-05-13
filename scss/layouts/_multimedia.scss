@@ -3,6 +3,12 @@
     .video-multimedia1 , .video-multimedia2 {
         @include flex (column, center, center);
         padding: 10px;
+        transition: .3s;
+        &:hover {
+            -webkit-box-shadow: 1px 1px 49px -13px rgba(209,178,112,1);
+            -moz-box-shadow: 1px 1px 49px -13px rgba(209,178,112,1);
+            box-shadow: 1px 1px 49px -13px rgba(209,178,112,1);
+        } 
     }
 }
 .section-carousel-multimedia {

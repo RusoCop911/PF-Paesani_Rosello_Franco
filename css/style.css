@@ -191,6 +191,12 @@ a {
 }
 .section-video-eventos .video iframe {
   width: 100%;
+  transition: 0.3s;
+}
+.section-video-eventos .video iframe:hover {
+  -webkit-box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
+  -moz-box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
+  box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
 }
 
 .grid-layaout {
@@ -209,17 +215,7 @@ a {
 .grid-layaout .ic p {
   margin: 0;
   color: #d1b270;
-  font-size: large;
-  font-weight: bold;
-}
-
-.section-img-eventos {
-  text-align: center;
-  margin: 30px 0;
-}
-.section-img-eventos img {
-  width: 100%;
-  padding: 10px;
+  font-family: "good_times";
 }
 
 .section-video-multimedia {
@@ -234,6 +230,12 @@ a {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  transition: 0.3s;
+}
+.section-video-multimedia .video-multimedia1:hover, .section-video-multimedia .video-multimedia2:hover {
+  -webkit-box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
+  -moz-box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
+  box-shadow: 1px 1px 49px -13px rgb(209, 178, 112);
 }
 
 .section-carousel-multimedia {
